@@ -16,4 +16,4 @@ Here are some screenshots of the website in action:
 
 --------------------------------------------------------------------------------------------------------------------
 
-![p vs ai](https://user-images.githubusercontent.com/64362945/189451715-ea00ee59-027a-4c79-b26e-2d8c652ef3ed.png)
+![hand tracking](https://user-images.githubusercontent.com/64362945/189451964-4ec926ae-1888-460a-9dff-06ff6679769b.png)

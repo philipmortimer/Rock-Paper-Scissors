@@ -1,0 +1,13 @@
+******************************************************************************************************************************************************
+Log generated at: Mon Sep  5 20:12:01 2022
+This log is used to provide some information about the images augmented.
+Note that no processed images are deleted in data augmentation step.
+The file containing augmented images ONLY contains augmented data
+******************************************************************************************************************************************************
+Total processed images used to produce augmented data: 8676
+Total augmented images produced: 52056
+Total number of rock in augmented set: 16470
+Total number of paper in augmented set: 17760
+Total number of scissors in augmented set: 17826
+******************************************************************************************************************************************************
+******************************************************************************************************************************************************

@@ -1,0 +1,29 @@
+******************************************************************************************************************************************************
+Log generated at: Mon Sep  5 20:08:39 2022
+This log is used to provide some information about the images processed.
+Please note that the calculation of whether an image is right or left handed is based on the assumption that the image is taken by a selfie cam and hence is flipped. If this is NOT the case, the hand output can be flipped. Please note that handedness is not used for training the AI, just there for curiosity
+******************************************************************************************************************************************************
+Rock
+Left Hands: 693
+Right hands: 2052
+Images where no hands were detected: 381
+Total Rock: 2745
+******************************************************************************************************************************************************
+Paper
+Left Hands: 774
+Right hands: 2186
+Images where no hands were detected: 171
+Total Paper: 2960
+******************************************************************************************************************************************************
+Scissors
+Left Hands: 789
+Right hands: 2182
+Images where no hands were detected: 166
+Total Scissors: 2971
+******************************************************************************************************************************************************
+Total
+Left Hands: 2256
+Right hands: 6420
+Images where no hands were detected: 718
+Total images: 8676
+******************************************************************************************************************************************************

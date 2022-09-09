@@ -1,0 +1,97 @@
+******************************************************************************************************************************************************
+Log generated at: Tue Sep  6 13:55:35 2022
+This log is used to provide some information about the trained model.
+Categorical cross entropy was used for the loss function and the ADAM optimiser was also used.
+Model trained for 281 epochs, using a batch size of 32 .
+Model uses dataset from combined folder (view log file there for more details).
+Please view png images in this folder to see loss and accuracy throughout training.
+Seed used for training randomness (using tf.random.set_seed(SEED)) = 66742697
+******************************************************************************************************************************************************
+Validation set
+Total validation images: 6074
+Overall categorical accuracy validation set: 98.5%
+Overall loss validation set: 0.05
+-Categorical accuracy augmented validation set: 98.3%
+-Loss (Categorical Cross Entropy) augmented validation set: 0.06
+-Total number of images in augmented validation set: 5218
+~Categorical accuracy non-augmented validation set: 99.3%
+~Loss (Categorical Cross Entropy) non-augmented validation set: 0.02
+~Total number of images in non-augmented validation set: 856
+******************************************************************************************************************************************************
+Test set
+Total test images: 6073
+Overall categorical accuracy test set: 98.3%
+Overall loss test set: 0.08
+-Categorical accuracy augmented test set: 98.1%
+-Loss (Categorical Cross Entropy) augmented test set: 0.09
+-Total number of images in augmented test set: 5198
+~Categorical accuracy non-augmented test set: 99.5%
+~Loss (Categorical Cross Entropy) non-augmented test set: 0.01
+~Total number of images in non-augmented test set: 875
+******************************************************************************************************************************************************
+Combined set (test set + validation set combined)
+Total combined images: 12147
+Overall categorical accuracy combined set: 98.4%
+Overall loss combined set: 0.06
+-Categorical accuracy augmented combined set: 98.2%
+-Loss (Categorical Cross Entropy) augmented combined set: 0.07
+-Total number of images in augmented combined set: 10416
+~Categorical accuracy non-augmented combined set: 99.4%
+~Loss (Categorical Cross Entropy) non-augmented combined set: 0.02
+~Total number of images in non-augmented combined set: 1731
+******************************************************************************************************************************************************
+Model summary:
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 21, 3, 32)         320       
+                                                                 
+ batch_normalization (BatchN  (None, 21, 3, 32)        128       
+ ormalization)                                                   
+                                                                 
+ conv2d_1 (Conv2D)           (None, 21, 3, 64)         18496     
+                                                                 
+ batch_normalization_1 (Batc  (None, 21, 3, 64)        256       
+ hNormalization)                                                 
+                                                                 
+ max_pooling2d (MaxPooling2D  (None, 11, 2, 64)        0         
+ )                                                               
+                                                                 
+ conv2d_2 (Conv2D)           (None, 11, 2, 64)         36928     
+                                                                 
+ batch_normalization_2 (Batc  (None, 11, 2, 64)        256       
+ hNormalization)                                                 
+                                                                 
+ max_pooling2d_1 (MaxPooling  (None, 5, 1, 64)         0         
+ 2D)                                                             
+                                                                 
+ flatten (Flatten)           (None, 320)               0         
+                                                                 
+ dropout (Dropout)           (None, 320)               0         
+                                                                 
+ dense (Dense)               (None, 512)               164352    
+                                                                 
+ dropout_1 (Dropout)         (None, 512)               0         
+                                                                 
+ dense_1 (Dense)             (None, 256)               131328    
+                                                                 
+ dropout_2 (Dropout)         (None, 256)               0         
+                                                                 
+ dense_2 (Dense)             (None, 128)               32896     
+                                                                 
+ dropout_3 (Dropout)         (None, 128)               0         
+                                                                 
+ dense_3 (Dense)             (None, 128)               16512     
+                                                                 
+ dropout_4 (Dropout)         (None, 128)               0         
+                                                                 
+ dense_4 (Dense)             (None, 3)                 387       
+                                                                 
+=================================================================
+Total params: 401,859
+Trainable params: 401,539
+Non-trainable params: 320
+_________________________________________________________________
+******************************************************************************************************************************************************
+******************************************************************************************************************************************************

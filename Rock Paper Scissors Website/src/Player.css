@@ -1,0 +1,27 @@
+#outputCanvasRobottrue {
+    border: solid;
+    border-radius: 5px;
+}
+
+#outputCanvasRobotfalse {
+    border: solid;
+    border-radius: 5px;
+}
+
+#outputCanvasHumanfalse {
+    border: solid;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+#outputCanvasHumantrue {
+    border: solid;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

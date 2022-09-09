@@ -1,0 +1,44 @@
+******************************************************************************************************************************************************
+Log generated at: Mon Sep  5 20:12:13 2022
+This log is used to provide some information about the combined data.
+These three data files combine both processed data and augmented variants of the processed data.
+Augmentation was achieved in number of ways (e.g. rotation, stretching etc.).
+Each record has 65 fields. The first 63 fields store the multi_hand_world_landmark coordinates. I.e. the 21 x, y and z coordinates of various points on the hand.
+These fields are stored in the form x0, y0, z0, x1, y1, z1, ... z20
+The next field represents the data label (0 = rock, 1 = paper, 2 = scissors)
+The final element represents whether the data is augmented or not (0 = not augmented and 1 = augmented).
+******************************************************************************************************************************************************
+Training
+Total images: 48585
+Total augmented images: 41640
+Total non-augmented images: 6945
+-- Rock images validation (augmented): 13176
+-- Paper images validation (augmented): 14178
+-- Scissors images validation (augmented): 14286
+~~ Rock images validation (not augmented): 2204
+~~ Paper images validation (not augmented): 2372
+~~ Scissors images validation (not augmented): 2369
+******************************************************************************************************************************************************
+Test
+Total images: 6073
+Total augmented images: 5198
+Total non-augmented images: 875
+-- Rock images validation (augmented): 1664
+-- Paper images validation (augmented): 1793
+-- Scissors images validation (augmented): 1741
+~~ Rock images validation (not augmented): 272
+~~ Paper images validation (not augmented): 315
+~~ Scissors images validation (not augmented): 288
+******************************************************************************************************************************************************
+Validation
+Total images: 6074
+Total augmented images: 5218
+Total non-augmented images: 856
+-- Rock images validation (augmented): 1630
+-- Paper images validation (augmented): 1789
+-- Scissors images validation (augmented): 1799
+~~ Rock images validation (not augmented): 269
+~~ Paper images validation (not augmented): 273
+~~ Scissors images validation (not augmented): 314
+******************************************************************************************************************************************************
+******************************************************************************************************************************************************

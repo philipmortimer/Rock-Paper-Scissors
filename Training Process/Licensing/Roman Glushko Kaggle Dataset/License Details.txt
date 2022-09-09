@@ -1,0 +1,4 @@
+Licensed CC-BY-SA 3.0 Link to license (https://creativecommons.org/licenses/by-sa/3.0/)
+Credit to Roman Gluksho and Anita Smirnova.
+Link to dataset: https://www.kaggle.com/datasets/glushko/rock-paper-scissors-dataset?resource=download
+Link to website detailing creation process: https://www.romaglushko.com/lab/rock-paper-scissors/

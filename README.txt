@@ -1,3 +1,0 @@
-This directory contains the code used to train a neural network to classify images of people playing the game rock, paper, scissors. Please place all images you would like to use in the appropriate folders in "Training Process/Raw Images". Run the file "main.py" to train the network (using some variation of "python main.py" or "python3 main.py" after having installed all required dependencies). Further documentation is also provided within this file.
-
-Within the "Rock Paper Scissors Website" folder is the code used to run the rock paper scissors website. Simply run change to this directory and run "npm start" to start the website (after installing dependencies with "npm install"). If you train a model, a copy of this model will be placed in the website directory too.

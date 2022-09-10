@@ -9,7 +9,7 @@ import random
 
 # Chooses seed for random num gen (either hard coded value or random one).
 # If your model doesn't train very well, it may be a good idea to change the seed.
-USE_PRE_SET_SEED = True
+USE_PRE_SET_SEED = False
 SEED = random.randint(0, 100000000)
 if USE_PRE_SET_SEED:
     SEED = 66742697

@@ -102,8 +102,8 @@ class CameraHandler extends React.Component {
                     this.handleFrame(videoElement);
                 }
             },
-            width: 10000,
-            height: 10000
+            width: 600,
+            height: 300
         });
         camera.start();
     }

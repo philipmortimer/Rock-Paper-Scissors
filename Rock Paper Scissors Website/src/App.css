@@ -17,56 +17,42 @@ p {
   color: white;
 }
 
-.input_video {
+/* Sets style features of components */
+.noDisplay {
   display: none;
 }
 
 .gridContainer {
-  display: grid;
-  grid-template-columns: 302px 150px 300px;
-  grid-template-rows: 310px 100px 100px;
-  gap: 1rem;
-  margin: 1rem;
-  grid-auto-rows: 1fr;
   justify-content: center;
+  display: grid;
+  margin: 1rem;
 }
 
-/* Places elements in grid */
-.gridContainer > .leftPlayer {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  display: flex;
-  justify-content: left;
+.input_video {
+  display: none;
 }
 
-.gridContainer > .rightPLayer {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
+#linkReport {
+  display: none;
+}
+
+.leftPlayer {
   margin-left: auto;
   margin-right: auto;
 }
 
-.gridContainer > .scorePlayAndTrack {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+.rightPlayer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scorePlayAndTrack {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-.score {
-  margin-top: 80%;
-  font: 32px "Ledger", seriff;
-}
-
 .playButtonBtn {
-  font: 32px "Arial";
   justify-content: center;  
   color: #606266;
   background: white;
@@ -75,60 +61,187 @@ p {
 }
 
 .playButtonTxt{
-  font: 32px "Ledger", seriff;
   justify-content: center;
 }
 
-.gridContainer > .handTracking {
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
-}
-
-
-.gridContainer > .moreInfo {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+.handTracking {
   margin-left: auto;
   margin-right: auto;
 }
 
-.gridContainer > .leftConfidence {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
+.moreInfo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leftConfidence {
   margin-left: 0px;
 }
 
-.gridContainer > .rightConfidence {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
+.rightConfidence {
   margin-left: 0px;
 }
 
-.gridContainer > .leftChangeBtn {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+.leftChangeBtn {
   margin-left: auto;
   margin-right: auto;
 }
 
-.gridContainer > .rightChangeBtn {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
+.rightChangeBtn {
   margin-left: auto;
   margin-right: auto;
 }
 
-#linkReport {
-  display: none;
+/*Responsiv UI */
+
+/*Grid layout for small sizes screens that can only fit one columns across screen
+Note this website UI only properly supports devices with width >= 320 px.
+Smaller devices than this are very rare and hence not designed for.*/
+@media only screen and (max-width: 742px) {
+  /* Defines font size and position for score, enable tracking and play button components */
+  .score {
+    font: 15px "Ledger", seriff;
+  }
+  
+  .playButtonBtn {
+    font: 15px "Arial";
+  }
+  
+  .playButtonTxt{
+    font: 15px "Ledger", seriff;
+  }
+
+  .leftChangeBtn{
+    font-size: 10px;
+  }
+
+  .rightChangeBtn{
+    font-size: 10px;
+  }
+
+  /* Sets grid layout and places items on grid */
+  .gridContainer {
+    grid-template-columns: 302px;
+    grid-template-rows: 324px 324px 70px 20px 20px 20px 100px 100px;
+    gap: 2px;
+  }
+  
+  .leftPlayer {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .rightPlayer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .scorePlayAndTrack {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .leftChangeBtn {
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .rightChangeBtn {
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .moreInfo {
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+
+  .leftConfidence {
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+
+  .rightConfidence {
+    grid-row-start: 8;
+    grid-row-end: 9;
+  }
+}
+
+/* Grid layout defined for screens large enough to fit intended UI across screen */
+@media only screen and (min-width: 743px) {
+  /* Defines font size and position for score, enable tracking and play button components */
+  .score {
+    margin-top: 80px;
+    font: 32px "Ledger", seriff;
+  }
+  
+  .playButtonBtn {
+    font: 32px "Arial";
+  }
+  
+  .playButtonTxt{
+    font: 32px "Ledger", seriff;
+  }
+  /*Defines grid layout for large screens */
+  .gridContainer {
+    grid-template-columns: 302px 100px 302px;
+    grid-template-rows: 324px 100px 100px;
+    gap: 5px;
+  }
+  
+  .leftPlayer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  .rightPlayer {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  .scorePlayAndTrack {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  .moreInfo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  
+  .leftConfidence {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  
+  .rightConfidence {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  
+  .leftChangeBtn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  
+  .rightChangeBtn {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }

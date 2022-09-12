@@ -61,7 +61,7 @@ class RobotPlayer extends React.Component {
   
     render() {
       return (
-        <div className="computerPlayer">
+        <div className={this.props.isLeftPlayer? "leftPlayer" : "rightPlayer"}>
             <span>🤖 AI</span>
             <canvas id={"outputCanvasRobot" + this.props.isLeftPlayer} width="300" height="300"></canvas>
         </div>

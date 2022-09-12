@@ -189,10 +189,10 @@ class App extends React.Component {
     //Displays confidence in results if appropriate
     const leftResultConfidence = this.state.leftSideIsHuman && this.state.leftSideResultRecieved?
       <ResultsConfidence data={this.state.confidenceLeftSide} side="left"/>
-      : <p />;
+      : <p className="noDisplay"/>;
     const rightResultConfidence = this.state.rightSideIsHuman && this.state.rightSideResultReceived?
       <ResultsConfidence data={this.state.confidenceRightSide} side="right"/>
-      : <p />;
+      : <p className="noDisplay"/>;
 
     const leftPlayer = this.state.leftSideIsHuman?          
     <HumanPlayer className="leftPlayer" ref={this._leftPlayer} onResult={this.receiveResult}
@@ -220,9 +220,11 @@ class App extends React.Component {
         <button disabled={this.state.countDownStarted} className="rightChangeBtn" onClick={this.changeRightPlayerType}>
           Change to {this.state.rightSideIsHuman? "🤖" : "🧠"} </button>
         <div className="scorePlayAndTrack">
-          <p className="score">{this.state.score.leftScore} : {this.state.score.rightScore}</p>
-          <PlayButton className="playButton" 
-          countDownFinished={this.countDownFinished} countDownStarted={this.countDownStarted} />
+          <div className="scorePlay">
+            <p className="score">{this.state.score.leftScore} : {this.state.score.rightScore}</p>
+            <PlayButton className="playButton" 
+            countDownFinished={this.countDownFinished} countDownStarted={this.countDownStarted} />
+          </div>
           <button className="handTracking" onClick={this.changeHandTrackingState}
             id={this.state.handTrackingVisualised?"disableTrack" : "enableTrack"}
             disabled={!this.state.leftSideIsHuman && !this.state.rightSideIsHuman}>

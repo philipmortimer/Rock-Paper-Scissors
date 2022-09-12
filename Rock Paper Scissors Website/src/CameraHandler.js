@@ -110,7 +110,9 @@ class CameraHandler extends React.Component {
   
     render() {
         return (
-            <video className="input_video"/>
+            <video className="input_video"
+            crossOrigin="anonymous"
+            playsInline={true}/>
         );
     }
   }

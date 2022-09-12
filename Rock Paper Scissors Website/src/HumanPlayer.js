@@ -187,7 +187,7 @@ class HumanPlayer extends React.Component {
   
     render() {
         return (
-            <div className="humanPlayer">
+            <div className={this.props.isLeftPlayer? "leftPlayer" : "rightPlayer"}>
                 <span>{this.state.handsLoaded? "🧠 Person" : "Loading..."}</span>
                 <canvas id={"outputCanvasHuman" + this.props.isLeftPlayer} width="300" height="300">
                 </canvas>

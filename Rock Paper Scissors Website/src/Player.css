@@ -1,3 +1,9 @@
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #outputCanvasRobottrue {
     border: solid;
     border-radius: 5px;
@@ -18,10 +24,4 @@
     border: solid;
     background-color: grey;
     border-radius: 5px;
-}
-
-span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

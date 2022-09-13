@@ -8,7 +8,7 @@ perform well, retraining with a different seed seems to often work.
 Using this trained model, I created a react website that allows users to use their webcam as an input to play rock paper scissors. The website code can be found in the
 "Rock Paper Scissors Website" folder. Simply change to this directory and run "npm start" (after having run "npm install" to install dependencies). This will
 run the website.
-I have made use of GitHub pages to host my website. So please visit "https://philipmortimer.github.io/" to see the website in action. However, please note that as
+I have made use of GitHub pages to host my website. So please visit "https://philipmortimer.github.io/" or "https://rock-paper-scissors-ai-game.web.app/" to see the website in action. However, please note that as
 GitHub only allows one website to be hosted per account, there is a high possibilty that I will repurpose this link for something else in the future (hence, I can't
 promise that this link will definitely work!).
 Here are some screenshots of the website in action:
